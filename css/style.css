@@ -2764,12 +2764,12 @@ pre {
 	margin: 0 auto;
 }
 
-/* ボタン本体：グラデーション＋メールアイコン */
+/* ボタン本体 */
 .l-header__contact-btn {
 	display: inline-flex;
 	align-items: center;
 	gap: 8px;
-	background: linear-gradient(135deg, #730000 0%, #8f1414 45%, #072C4F 100%);
+	background: #E07820;
 	color: #ffffff;
 	font-weight: 700;
 	font-size: 1.45rem;
@@ -2780,23 +2780,8 @@ pre {
 	white-space: nowrap;
 	border: none;
 	cursor: pointer;
-	position: relative;
-	overflow: hidden;
-	transition: opacity 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
-	box-shadow: 0 2px 8px rgba(115, 0, 0, 0.35);
-}
-
-/* 光沢ハイライト */
-.l-header__contact-btn::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: -60%;
-	width: 40%;
-	height: 100%;
-	background: rgba(255,255,255,0.18);
-	transform: skewX(-20deg);
-	pointer-events: none;
+	transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+	box-shadow: 0 2px 8px rgba(224, 120, 32, 0.40);
 }
 
 /* アイコン（封筒）*/
@@ -2813,14 +2798,14 @@ pre {
 }
 
 .l-header__contact-btn:hover {
-	opacity: 0.88;
+	background: #c96a18;
 	transform: translateY(-1px);
-	box-shadow: 0 4px 14px rgba(115, 0, 0, 0.40);
+	box-shadow: 0 4px 14px rgba(224, 120, 32, 0.50);
 }
 
 .l-header__contact-btn:active {
 	transform: translateY(0);
-	opacity: 1;
+	background: #b85e14;
 }
 
 /* MV top offset for fixed header */
