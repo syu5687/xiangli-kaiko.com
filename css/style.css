@@ -2729,3 +2729,75 @@ pre {
 
 }
 
+
+/* ===== Fixed Header ===== */
+.l-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9000;
+	height: 60px;
+	background: rgba(255, 255, 255, 0.97);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+}
+
+.l-header__inner {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	height: 100%;
+	padding: 0 32px;
+	max-width: 1110px;
+	margin: 0 auto;
+}
+
+.l-header__contact-btn {
+	display: inline-block;
+	background: #730000;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 1.5rem;
+	padding: 11px 28px;
+	border-radius: 6px;
+	text-decoration: none;
+	letter-spacing: 0.08em;
+	transition: background 0.2s ease, transform 0.1s ease;
+	white-space: nowrap;
+	border: none;
+	cursor: pointer;
+}
+
+.l-header__contact-btn:hover {
+	background: #560000;
+	transform: translateY(-1px);
+}
+
+/* MV top offset for fixed header */
+.mv {
+	padding-top: 90px; /* 既存 30px + header 60px */
+}
+
+/* SP */
+@media screen and (max-width: 767px) {
+	.l-header {
+		height: 52px;
+	}
+
+	.l-header__inner {
+		padding: 0 16px;
+		justify-content: flex-end;
+	}
+
+	.l-header__contact-btn {
+		font-size: 1.3rem;
+		padding: 9px 18px;
+		border-radius: 5px;
+	}
+
+	.mv {
+		padding-top: 82px; /* 既存 30px + header 52px */
+	}
+}
