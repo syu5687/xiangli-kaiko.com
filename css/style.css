@@ -2863,3 +2863,23 @@ pre {
 		padding-bottom: 90px;
 	}
 }
+
+/* お問い合わせ返信注記 */
+.cv-area__reply-note {
+	margin-top: 18px;
+	font-size: 1.3rem;
+	font-weight: 700;
+	line-height: 1.8;
+	text-align: center;
+	color: #730000;
+}
+
+.cv-area--blue + .cv-area__reply-note {
+	color: #072C4F;
+}
+
+@media screen and (min-width: 768px) {
+	.cv-area__reply-note {
+		font-size: 1.4rem;
+	}
+}
